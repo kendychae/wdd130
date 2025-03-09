@@ -2,10 +2,10 @@
 :root {
     --primary-color: #172121;
     /* Eerie black */
-    --secondary-color: #FFD29D;
-    /* Sunset */
-    --accent1-color: #AF5B5B;
-    /* Redwood */
+    --secondary-color: #ef8206;
+    /* Vivid Orange */
+    --accent1-color: #de0606;
+    /* Vivid Rwd */
     --accent2-color: #0E3044;
     /* Prussian Blue */
 }
