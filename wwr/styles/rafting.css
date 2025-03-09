@@ -1,0 +1,76 @@
+/* Define CSS variables in the :root pseudo-class selector */
+:root {
+    --primary-color: #172121;
+    /* Eerie black */
+    --secondary-color: #FFD29D;
+    /* Sunset */
+    --accent1-color: #AF5B5B;
+    /* Redwood */
+    --accent2-color: #0E3044;
+    /* Prussian Blue */
+}
+
+/* Style headings and paragraph elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+/* Remove underlines from social media image links */
+a img {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+}
+
+.sociallinks a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
