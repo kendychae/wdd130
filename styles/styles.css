@@ -1,26 +1,47 @@
+/* Define CSS variables */
+:root {
+    --nav-bg-color: darkblue;
+    --nav-link-color: white;
+    --nav-link-padding: 20px;
+    --heading-color: darkblue;
+    --img-width: 150px;
+    --img-border: 1px solid black;
+    --img-padding: 2px;
+    --img-box-shadow: 0 0 30px gray;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+    --aside-border: 1px solid rgb(0 0 0 / 0.2);
+    --aside-padding: 1rem;
+    --aside-bg-color: #eee;
+    --aside-color: #333;
+    --main-max-width: 840px;
+    --footer-margin-top: 15px;
+    --footer-border-top: 1px solid #000;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--nav-bg-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
-    padding: 20px;
+    padding: var(--nav-link-padding);
     text-decoration: none;
     /* Added to remove underline from links */
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-color);
 }
 
 img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--img-border);
+    padding: var(--img-padding);
+    box-shadow: var(--img-box-shadow);
 }
 
 p {
@@ -28,17 +49,16 @@ p {
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
+    border: var(--aside-border);
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg-color);
+    color: var(--aside-color);
     text-align: center;
 }
 
@@ -48,7 +68,7 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
 }
 
@@ -57,7 +77,7 @@ p {
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: var(--footer-border-top);
     text-align: center;
 }
