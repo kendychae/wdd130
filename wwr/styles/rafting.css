@@ -82,45 +82,44 @@ header nav a:hover {
 }
 
 .hero-img {
+    display: block;
     width: 100%;
     height: auto;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgba(8, 0, 0, 0.95);
-    font-family: 'Cinzel', serif;
-    font-size: 3em;
-}
-
-.hero p {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(249, 247, 247, 0.8);
-    padding: 10px;
-    color: rgba(8, 0, 0, 0.95);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    max-width: 80%;
-    text-align: center;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-size: 2.5rem;
 }
 
 .overlay-article {
     position: absolute;
-    bottom: 10%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
 }
 
-.article-img {
-    width: 200px;
-    height: auto;
+.overlay-article .article-img {
+    width: 50%;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.overlay-article p {
+    font-size: 1.2rem;
+    flex: 1;
 }
 
 /* Social links */
