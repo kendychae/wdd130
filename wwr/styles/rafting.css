@@ -112,9 +112,10 @@ header nav a:hover {
 }
 
 .overlay-article .article-img {
+    float: right;
+    margin-left: 20px;
     width: 50%;
     max-width: 300px;
-    margin-left: 20px;
 }
 
 .overlay-article p {
@@ -138,6 +139,7 @@ header nav a:hover {
     /* Add spacing between images */
     border: none;
     /* Add this line to remove the border around images */
+    text-decoration: none;
 }
 
 /* Standard image size for all images */
