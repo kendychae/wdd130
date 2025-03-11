@@ -112,7 +112,6 @@ header nav a:hover {
 }
 
 .overlay-article .article-img {
-    float: right;
     margin-left: 20px;
     width: 50%;
     max-width: 300px;
