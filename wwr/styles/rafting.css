@@ -197,4 +197,5 @@ footer a {
 footer .social-img {
     width: 30px;
     height: auto;
+    text-decoration: none;
 }
