@@ -1,13 +1,19 @@
 /* Define CSS variables in the :root pseudo-class selector */
 :root {
-    --primary-color: #172121;
-    /* Eerie black */
-    --secondary-color: #ef8206;
-    /* Vivid Orange */
-    --accent1-color: #de0606;
-    /* Vivid Red */
-    --accent2-color: #0E3044;
-    /* Prussian Blue */
+    --primary-color: #003333;
+    /* Dark Teal */
+    --secondary-color: #006666;
+    /* Dark Cyan for better contrast */
+    --accent1-color: #b22222;
+    /* Dark Red */
+    --accent2-color: #006400;
+    /* Dark Green */
+    --dark-bg-color: #5c5c5c;
+    /* Lighter Gray for better contrast */
+    --light-text-color: #ffffff;
+    /* White */
+    --light-bg-color: #f0f8ff;
+    /* Light Blue */
 }
 
 /* Style headings and paragraph elements */
@@ -18,17 +24,18 @@ h4,
 h5,
 h6 {
     color: var(--primary-color);
+    font-family: 'Arial', sans-serif;
 }
 
 p {
     color: var(--secondary-color);
+    font-family: 'Arial', sans-serif;
 }
 
 /* Remove underlines from social media image links */
 .sociallinks a img {
     text-decoration: none;
     border: none;
-    /* Add this line to remove the border around images */
 }
 
 /* Ensure social media links do not show text decoration */
@@ -41,6 +48,7 @@ nav a {
     color: var(--primary-color);
     text-decoration: none;
     padding: 10px;
+    font-family: 'Arial', sans-serif;
 }
 
 nav a:hover {
@@ -53,14 +61,16 @@ body {
     min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-bg-color);
 }
 
 /* Header styling using CSS Grid */
 header {
-    background-color: #333;
-    color: white;
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
     padding: 1rem;
+    font-family: 'Arial', sans-serif;
 }
 
 .header-container {
@@ -80,9 +90,10 @@ header .nav-links {
 }
 
 header .nav-links a {
-    color: white;
+    color: var(--light-text-color);
     text-decoration: none;
     margin: 0 1rem;
+    font-family: 'Arial', sans-serif;
 }
 
 header .nav-links a:hover {
@@ -100,7 +111,6 @@ header .nav-links a:hover {
     display: block;
     width: 100%;
     height: auto;
-    /* Ensure the hero image fits within the allocated space */
 }
 
 .hero h1 {
@@ -108,15 +118,13 @@ header .nav-links a:hover {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--light-text-color);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 3.5rem;
-    /* Increase the font size */
     white-space: nowrap;
-    /* Ensure the title is on one line */
     z-index: 2;
-    /* Ensure the title is above other elements */
+    font-family: 'Arial', sans-serif;
 }
 
 .overlay-article {
@@ -124,63 +132,51 @@ header .nav-links a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--light-text-color);
     padding: 20px;
     width: 90%;
     display: flex;
     flex-direction: row;
-    /* Arrange elements horizontally */
     align-items: center;
     justify-content: flex-end;
     z-index: 1;
-    /* Ensure the article is below the title */
+    font-family: 'Arial', sans-serif;
 }
 
 .overlay-article .article-img {
     margin-left: 20px;
-    /* Add spacing between the paragraph and the image */
     width: 100%;
     max-width: 300px;
-    /* Set the max-width */
 }
 
 .overlay-article p {
     font-size: 1.8rem;
-    /* Increase the font size */
     text-align: left;
-    /* Align text to the left */
     flex: 1;
-    /* Allow the paragraph to fill the remaining space */
+    font-family: 'Arial', sans-serif;
 }
 
 /* Social links */
 .sociallinks {
     display: flex;
     flex-direction: column;
-    /* Stack images vertically */
     align-items: center;
-    /* Center images horizontally */
 }
 
 .sociallinks a img {
     width: 30px;
     height: 30px;
     margin: 10px 0;
-    /* Add spacing between images */
     border: none;
-    /* Add this line to remove the border around images */
     text-decoration: none;
 }
 
 /* Standard image size for all images */
 .standard-img {
     width: 200px;
-    /* Adjust the width as needed */
     height: 150px;
-    /* Adjust the height as needed */
     object-fit: cover;
-    /* Ensure the image covers the specified dimensions */
 }
 
 .image-container {
@@ -190,13 +186,14 @@ header .nav-links a:hover {
 
 /* Style the footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
     text-align: center;
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: 'Arial', sans-serif;
 }
 
 footer p {
@@ -204,7 +201,9 @@ footer p {
 }
 
 footer a {
+    color: var(--light-text-color);
     margin: 0 0.5rem;
+    font-family: 'Arial', sans-serif;
 }
 
 footer .social-img {
@@ -223,6 +222,7 @@ footer .social-img {
     grid-template-columns: 1fr auto 1fr;
     gap: 1rem;
     align-items: center;
+    font-family: 'Arial', sans-serif;
 }
 
 .history img {
@@ -237,6 +237,7 @@ footer .social-img {
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
 }
 
 .adventures figure {
@@ -252,4 +253,5 @@ footer .social-img {
     margin-top: 0.5rem;
     font-size: 1rem;
     color: var(--primary-color);
+    font-family: 'Arial', sans-serif;
 }
