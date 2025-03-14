@@ -14,6 +14,10 @@
     /* White */
     --light-bg-color: #f0f8ff;
     /* Light Blue */
+    --footer-bg-color: #003366;
+    /* Dark Blue */
+    --footer-text-color: #ffffff;
+    /* White */
 }
 
 /* Style headings and paragraph elements */
@@ -186,8 +190,8 @@ header .nav-links a:hover {
 
 /* Style the footer */
 footer {
-    background-color: var(--dark-bg-color);
-    color: var(--light-text-color);
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
     text-align: center;
     padding: 1rem;
     display: flex;
@@ -198,10 +202,12 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+    color: var(--footer-text-color);
+    /* Ensure footer text is white */
 }
 
 footer a {
-    color: var(--light-text-color);
+    color: var(--footer-text-color);
     margin: 0 0.5rem;
     font-family: 'Arial', sans-serif;
 }
