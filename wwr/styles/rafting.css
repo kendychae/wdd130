@@ -327,3 +327,8 @@ form button {
 form button:hover {
     background-color: #555;
 }
+
+/* Google Map iframe styling */
+.google-map {
+    border: 0;
+}
